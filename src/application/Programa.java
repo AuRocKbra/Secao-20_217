@@ -18,7 +18,7 @@ public class Programa {
 		list.add(new Produto("Tablet", 350.50));
 		list.add(new Produto("HD Case", 80.90));
 		
-		List<String> novaLista = list.stream().map(Produto::estaticoUpperCase).collect(Collectors.toList());
+		List<String> novaLista = list.stream().map(Produto::naoEstaticoUpperCase).collect(Collectors.toList());
 		
 		novaLista.forEach(System.out::println);
 	}

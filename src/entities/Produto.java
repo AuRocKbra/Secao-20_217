@@ -35,4 +35,8 @@ public class Produto {
 	public static String estaticoUpperCase(Produto p) {
 		return p.getNome().toUpperCase();
 	}
+	
+	public String naoEstaticoUpperCase() {
+		return getNome().toUpperCase();
+	}
 }
