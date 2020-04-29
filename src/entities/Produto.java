@@ -31,4 +31,8 @@ public class Produto {
 	public String toString() {
 		return "Produto [nome=" + nome + ", preco=" + String.format("%.2f",preco) + "]";
 	}
+	
+	public static String estaticoUpperCase(Produto p) {
+		return p.getNome().toUpperCase();
+	}
 }
